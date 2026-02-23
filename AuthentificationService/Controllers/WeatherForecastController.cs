@@ -1,4 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using AuthentificationService.DAL;
+using Microsoft.EntityFrameworkCore;
+using AuthentificationService.DAL.Models;
 
 namespace AuthentificationService.Controllers
 {
@@ -6,6 +9,21 @@ namespace AuthentificationService.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+        private readonly AuthDbContext _context;
+
+        public WeatherForecastController(AuthDbContext context)
+        {
+            _context = context;
+        }
+
+        [HttpGet("test-db")]
+        public async Task<IActionResult> TestDb()
+        {
+            var canConnect = await _context.Database.CanConnectAsync();
+            return Ok( new {connected = canConnect, message = canConnect ? "Connexion DB OK" : "Connexion DB échouée" });
+        // "?"+:" signifie si la variable est true c'est l'un sinon c'est l'autre 
+        }
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
