@@ -1,0 +1,53 @@
+## Fichiers de l'IDE
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Dossiers de build
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+**/Publish/
+
+## Fichiers de configuration sensibles
+**/appsettings.Production.json
+**/appsettings.Development.json
+**/appsettings.*.json
+!appsettings.json  # On garde appsettings.json (sans infos sensibles)
+
+## Fichiers secrets utilisateur
+**/secrets.json
+**/appsettings.secrets.json
+
+## Fichiers de base de données locale
+*.mdf
+*.ldf
+*.db
+
+## Logs
+*.log
+logs/
+**/logs/
+
+## Fichiers temporaires
+*.tmp
+*.temp
+*.cache
+*.pid
+*.seed
+*.pid.lock
+
+## Dossiers des tests
+**/TestResults/
+
+## Fichiers de couverture de code
+*.coverage
+*.coverage.xml
+*.coverageresults
+
+## Fichiers générés par dotnet
+*.nupkg
