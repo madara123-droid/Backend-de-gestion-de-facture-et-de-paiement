@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AuthentificationService.DAL.Models;
+using AuthentificationSerice.Core.Entitie;
 
 namespace AuthentificationSerice.Core.Interfaces.Repositories
 {

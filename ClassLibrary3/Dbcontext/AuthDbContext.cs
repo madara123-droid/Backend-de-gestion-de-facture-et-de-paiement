@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using AuthentificationSerice.Core.Entitie;
 using Microsoft.EntityFrameworkCore;
 
 namespace AuthentificationService.DAL.Models;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuthentificationSerice.Core.Interfaces.DTOs
+namespace AuthentificationSerice.Core.DTOs
 {
     public class LoginDto
     {
