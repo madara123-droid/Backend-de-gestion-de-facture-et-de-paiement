@@ -2,6 +2,7 @@
 using AuthentificationSerice.Core;
 using AuthentificationSerice.Core.Interfaces.Repositories;
 using AuthentificationService.DAL.Models;
+using AuthentificationSerice.Core.Entitie;
 
 
 namespace AuthentificationService.DAL.Repositories

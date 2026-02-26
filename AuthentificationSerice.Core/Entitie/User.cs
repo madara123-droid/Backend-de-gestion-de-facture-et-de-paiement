@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AuthentificationService.DAL.Models;
+namespace AuthentificationSerice.Core.Entitie;
 
 public partial class User
 {
